@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#141529</color>
+    <color name="colorPrimaryDark">#141529</color>
+    <color name="colorAccent">@android:color/white</color>
+
+    <color name="themecolor">#1A1737</color>
+
+    <color name="headingcolor">#8C9FAD</color>
+
+
+
+    <color name="colorDarkBlue">#141529</color>
+    <color name="colorDarkBlueLight">#191B44</color>
+    <color name="colorLessDarkBlue">#191B33</color>
+    <color name="skyBlue">#85BBF2</color>
+
+    <color name="darkSkyBlue">#69B7FD</color>
+    <color name="lightWhite">#F7F7F7</color>
+
+    <color name="listdividercolor">#1E1B3B</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="settingsColor">#285187</color>
+    <color name="settingsSecondary">#234979</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorAttendees">#757575</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="cardview_grey_background">#464952</color>
+    <color name="colorBlue">#208fff</color>
+    <color name="colorGrey">#b2b2b2</color>
+    <color name="colorDateCircle">#F44336</color>
+    <color name="colorDateCircleUnselect">#F7F7F7</color>
+    <color name="colortextGrey">#9197A3</color>
+    <color name="colortextDarkGrey">#9197A3</color>
+
+    <color name="color_login">#0F1D41</color>
+    <color name="color_text_dialog">#2196F3</color>
+    <color name="color_bg_green">#65BE24</color>
+    <color name="color_bg_grey">#CCCFD7</color>
+    <color name="colorApp">#011D5E</color>
+    <color name="colorOffWhite">#f8f8ff</color>
+    <color name="colorLight">#7f8dae</color>
+    <color name="colorStyle">#58BEB1</color>
+
+
+
+</resources>

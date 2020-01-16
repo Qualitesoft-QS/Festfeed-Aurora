@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="select_your_city">Select your City</string>
+    <string name="view_the_terms_of_service_and_privacy_policy">View the Terms of Service\n and Privacy Policy.</string>
+    <string name="blank_hyphens">- - -</string>
+    <string name="santa_s_lost_presents">SANTA\'S LOST PRESENTS</string>
+    <string name="santa_s_presents_have_gone_missing">Santa’s presents have gone missing, and\nhe needs your help to save Christmas!\nWander through the enchanted forest and\nexplore the magic castle while you\nuncover missing presents.\n\n Scan all 6 presents to win a prize!</string>
+    <string name="begin_quest">Begin Quest</string>
+    <string name="done">Done</string>
+    <string name="need_additional_instructions_tap_here">Need additional instructions? Tap Here.</string>
+    <string name="game_title_n_instructions">GAME TITLE\nInstructions</string>
+    <string name="how_to_play_the_mystical">How to Play the Mystical Worlds Quest: \n\nThe beauty of the Mystical Worlds thrives on the energy of It’s guests. Each of the four worlds contains two feature attractions with QR codes that can be charged by scanning them. Every time a barcode is scanned it helps sustain the beauty and magic of the Mystical Worlds. If you are able to find and charge all eight of the feature attractions the Aurora Elves will gift you a small prize for helping keep the Mystical Worlds energized and beautiful. The Prize Hut is located near the Mystical World’s exit.\n\n\n\nHow to Scan the Feature Attractions:\n\nOnce you’ve found a feature attraction, open up your scanner (on the previous page) click the QR code and point the camera towards the QR code below the attraction on the sign. Once you’ve successfully scanned a QR code, the feature attraction will change colour on your phone.\n\nNote: Some features have multiple QR code stands with the same code to prevent overcrowding.</string>
+    <string name="info">Info</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="description">Description</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="scan_all_6_codes_to_redeem_a_prize">Scan all 6 codes to redeem a prize.</string>
+    <string name="gates_open">Gates Open</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="sort_schedule_by">Sort schedule by</string>
+</resources>

@@ -1,0 +1,459 @@
+<resources>
+
+    <string name="select_your_city">Select your City</string>
+    <string name="view_the_terms_of_service_">View the Terms of Service </string>
+    <string name="view_privacy_policy">and Privacy Policy.</string>
+    <string name="blank_hyphens">- - -</string>
+    <string name="santa_s_lost_presents">SANTA\'S LOST PRESENTS</string>
+    <string name="santa_s_presents_have_gone_missing">Santa’s presents have gone missing, and\nhe needs your help to save Christmas!\nWander through the enchanted forest and\nexplore the magic castle while you\nuncover missing presents.\n\n Scan all 6 presents to win a prize!</string>
+    <string name="begin_quest">Begin Quest</string>
+    <string name="done">Done</string>
+    <string name="need_additional_instructions_tap_here">Need additional instructions? Tap Here.</string>
+    <string name="game_title_n_instructions">GAME TITLE\nInstructions</string>
+    <string name="how_to_play_the_mystical">How to Play the Mystical Worlds Quest: \n\nThe beauty of the Mystical Worlds thrives on the energy of It’s guests. Each of the four worlds contains two feature attractions with QR codes that can be charged by scanning them. Every time a barcode is scanned it helps sustain the beauty and magic of the Mystical Worlds. If you are able to find and charge all eight of the feature attractions the Aurora Elves will gift you a small prize for helping keep the Mystical Worlds energized and beautiful. The Prize Hut is located near the Mystical World’s exit.\n\n\n\nHow to Scan the Feature Attractions:\n\nOnce you’ve found a feature attraction, open up your scanner (on the previous page) click the QR code and point the camera towards the QR code below the attraction on the sign. Once you’ve successfully scanned a QR code, the feature attraction will change colour on your phone.\n\nNote: Some features have multiple QR code stands with the same code to prevent overcrowding.</string>
+    <string name="info">Info</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="description">Description</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="scan_all_6_codes_to_redeem_a_prize">Scan all 6 codes to redeem a prize.</string>
+    <string name="gates_open">Gates Open</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="sort_schedule_by">Sort schedule by</string>
+
+
+
+
+
+    <!-- Strings related to login/sign-up -->
+    <string name="prompt_email">Email Address</string>
+    <string name="register_email">Enter email address</string>
+    <string name="register_password">Create a password</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="app_title_cancel">Cancel</string>
+    <string name="app_title_settings">Settings</string>
+    <string name="server_url">https://api-awf.festfeed.com/api/</string>
+    <string name="help_text">Help</string>
+    <string name="title_activity_signup">Sign up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="select_picture">Select Picture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_picture">UserPicture</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="example_content">Currently making a group to go attend The Summit Event this year. If you want to join send me a message so we can stay in touch throughout!</string>
+    <string name="signup_activation_email_sent">An Activation email will arrive in approximately 1 minute. You must activate before you can use this app.</string>
+    <string name="server_error">Server Error, Please Try Again Later.</string>
+    <string name="DOB">Age</string>
+    <string name="l_name">Last Name</string>
+    <string name="f_name">First Name</string>
+    <string name="fill_following">Please fill out the following</string>
+
+    <string name="above_13_text">We ask to confirm you’re above 13 years old in accordance with the COPPA Act</string>
+    <string name="next_button">Next</string>
+    <string name="title_activity_full_screen_post">FullScreenPostActivity</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_friend">FriendActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="app_no_network">Network not available</string>
+
+    <!--Facebook Strings-->
+    <string name="facebook_app_id">318517058556238</string>
+    <string name="fb_login_protocol_scheme">fb318517058556238</string>
+
+    *************Service***********
+    <string name="service_location">LocationService</string>
+
+    <!-- Strings related to FindMe -->
+
+    <string name="notification_start_share">Start Sharing</string>
+    <string name="notification_stop_share">Stop Sharing</string>
+    <string name="notification_share_loc">share_loc</string>
+    <string name="info_bundle_event_id">event_id</string>
+    <string name="info_bundle_sharing_mins">sharing_mins</string>
+    <string name="info_bundle_sharing_start_time">sharing_start_time</string>
+    <string name="info_bundle_lat">latitude</string>
+    <string name="info_bundle_lng">longitude</string>
+    <string name="notification_active_provider">PROVIDER_ACTIVE</string>
+    <string name="notification_presence_info">PRESENCE_INFO</string>
+    <string name="notification_unactive_provider">NO_PROVIDER_ACTIVE</string>
+
+    *************Permissions***********
+    <string name="permission_sms">We require a text message to be sent for registration.Please grant access to enable SMS on your phone.</string>
+    <string name="permission_storage">We require access for photos,media and files on your device to proceed. Please click on settings and allow access.</string>
+    <string name="permission_location">We require access for location on your device to proceed. Please click on settings and allow access.</string>
+
+    **********Permission Preference**********
+    <string name="permission_pref_sms">PERM_SMS</string>
+    <string name="permission_pref_location">PERM_LOC</string>
+    <string name="permission_pref_storage">PERM_STORAGE</string>
+
+    <!-- GameData General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- GameData settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- GameData settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_search">Search</string>
+    <string name="no_suggested_friends">No Suggested Friends</string>
+    <string name="suggested_friends">Suggested Friends</string>
+    <string name="search_hint">Search for people or events</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="privacy_info">Your posts, events you\'re attending and friends will only be visible to your friends </string>
+    <string name="insta_info">Adding your Instagram will allow friends and other event attendees to see this social profile </string>
+    <string name="linkedin_info">Adding your LinkedIn will allow friends and other event attendees to see this social profile </string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="coupons">COUPONS</string>
+    <string name="requests">REQUESTS</string>
+    <string name="offer">OFFER</string>
+    <string name="from">FROM</string>
+    <string name="accept">Accept</string>
+    <string name="ignore">Ignore</string>
+    <string name="you_are_now_friends">You are now friends</string>
+    <string name="ignored_friend">Friend Request Ignored</string>
+    <string name="title_activity_new_post">NewPostActivity</string>
+    <string name="tag_search">Search for Users, Events or Groups</string>
+    <string name="no_results">No Results</string>
+    <string name="create_account">Create an account</string>
+    <string name="want_help">Want Help?</string>
+    <string name="i_have_an_account">I have an account</string>
+    <string name="privacy_policy">By tapping Log in with Facebook or Create Account, I agree to the Terms of Service and Privacy Policy.</string>
+    <string name="create_a_password">Create a password</string>
+    <string name="mystical_text">The Mystical Worlds Quest</string>
+    <string name="instructions_txt1">1. Find the 8 symbols around the venue</string>
+    <string name="instructions_txt2">2. Scan each symbol using the app</string>
+    <string name="instructions_txt3">3. Redeem for a prize once you found all 8</string>
+    <string name="instructions_text">Instructions</string>
+    <string name="additional_instructions">Additional Instructions to be put here.</string>
+    <string name="winter_festival">WINTER FESTIVAL</string>
+
+    <string name="tap_to_open_scanner">Tap to open scanner</string>
+    <string name="scan_all_code">Scan all 6  codes to redeem a prize</string>
+    <string name="need_additional_instructions">Need Additional Instructions? tap here</string>
+    <string name="view_the">View the</string>
+    <string name="terms_of_service"><u>Terms of Service</u></string>
+    <string name="and">and</string>
+    <string name="privacy_policy_text"><u>Privacy Policy</u></string>
+    <string name="vancouver">Vancouver</string>
+    <string name="toronto">Toronto</string>
+
+    <string name="completion_text">0% Completed</string>
+    <string name="save">Save</string>
+    <string name="deeplink_info">If you are attending tap \'I\'m Going\' to be informed about what\'s happening, receive rewards and more</string>
+    <string name="nope">Nope</string>
+    <string name="im_going">I\'m Going!</string>
+<!-- <string name="gcm_defaultSenderId">42979777732</string>-->
+    <string name="title_activity_conversations_list">Messages</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="send">Send</string>
+    <string name="search_for_friend">Search for Friend</string>
+    <string name="no_conversations">No Conversations.</string>
+    <string name="nearby_events">Events Near You</string>
+    <string name="groups">Groups</string>
+    <string name="new_text">New</string>
+    <string name="losing_each_other_is_a_thing_of_the_past">Losing each other is a thing of the past</string>
+    <string name="analytics_key">fvfmdZdPAtg51RIUyJWJUY8ipYL61OHp</string>
+    <string name="invite_friends_hint">Search for friends to invite</string>
+    <string name="album_name">FestFeed</string>
+    <string name="fill_out_fields">Fill out all fields</string>
+    <string name="age_restriction">You must be at least 13 years of age to use this app</string>
+    <string name="flag_title">Flag Content?</string>
+    <string name="flag_text">Is this content inappropriate, offensive, hate speech or harassment?</string>
+    <string name="delete_post">Are you sure you want to remove this post permanently from this app?</string>
+    <string name="delete_title">Delete Post</string>
+    <string name="leaving_group">Leaving Group</string>
+    <string name="invalid_credentials">Invalid Credentials. Logged Out</string>
+    <string name="message_mustbe_friends">You must be friends with a user to message them</string>
+    <string name="attendee">" Friends Attending"</string>
+    <string name="attendees">" Friends Attending"</string>
+    <string name="no_events_to_show">"There are no events in this city"</string>
+    <string name="see_your_profile">See your profile</string>
+    <string name="search_for_event">Search for an event</string>
+    <string name="no_start_time">No Start Time</string>
+    <string name="add_a_picture_of_yourself_so_your_friends_can_find_you">Add a picture of yourself so your friends can find you.</string>
+    <string name="error_deleting_post">Error Deleting Post</string>
+    <string name="loading">Loading...</string>
+    <string name="facebook_login_error">Facebook Login Error, please use  login</string>
+    <string name="error_uploading">Error uploading profile picture. Try again</string>
+    <string name="message_nonfriend">Can\'t message a user who is not your friend</string>
+    <string name="empty_search">Search field is empty</string>
+    <string name="post">Post</string>
+    <string name="home">Home</string>
+    <string name="profile">Settings</string>
+    <string name="messages">Messages</string>
+    <string name="events">Events</string>
+    <string name="friends">Friends</string>
+    <string name="notifications_lower">Notifications</string>
+    <string name="search">Search</string>
+    <string name="show">Show</string>
+    <string name="collapse">Collapse</string>
+    <string name="error_changing_password">Error changing password, try again</string>
+    <string name="event_prompt">If you are attending, tap \'I\'m Going\' to receive event updates, get added to the attendees list, receive in event rewards and more!</string>
+    <string name="not_now">Not now</string>
+    <string name="enter_comment">Enter a Comment</string>
+    <string name="follow_event">Are you sure you want to follow this event?</string>
+    <string name="going">Going?</string>
+    <string name="info_tab">Info</string>
+    <string name="feed_tab">Feed</string>
+    <string name="schedule_tab">Schedule</string>
+    <string name="posts_tab">Posts</string>
+    <string name="no_one_invited">No one has been invited</string>
+    <string name="inviting_friends">Inviting Friends...</string>
+    <string name="error_making_search">Error making search</string>
+    <string name="attending_tab">Attending</string>
+    <string name="discover_tab">Discover</string>
+    <string name="search_tab">Search</string>
+    <string name="no_attendees">No Attendees</string>
+    <string name="no_members">No Members</string>
+    <string name="no_friends_added">You haven\'t added any friends</string>
+    <string name="join_to_see_members">Join group to see members</string>
+    <string name="joined">Joined</string>
+    <string name="events_tab">Events</string>
+    <string name="friends_tab">Friends</string>
+    <string name="coming_soon_details">We\'re hard at work to get this feature to you. Hang tight it\'s coming soon!</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="weclome">Welcome!</string>
+    <string name="welcome_toolbox">Lets quickly learn how to navigate around. Start by tapping on Toolbox below</string>
+    <string name="toolbox">Toolbox</string>
+    <string name="toolbox_tip_details">helps you to interact with the app . You can post, search, and message friends</string>
+    <string name="no_profile_photo_chosen">No Profile Photo Chosen</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="camera">Camera</string>
+    <string name="photos">Photos</string>
+    <string name="email_in_use">Email in use, please check login.</string>
+    <string name="enter_valid_password">Enter a valid password</string>
+    <string name="temp_password_expiring">Temporary Password Expiring</string>
+    <string name="error">Error</string>
+    <string name="error_try_again">Error occurred, please try again.</string>
+    <string name="enter_email_new_password">Enter email to send new password</string>
+    <string name="help">Help</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_valid_email">Enter a valid email</string>
+    <string name="new_password_sent">A new Password has been sent to your email</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="mutual_friend">Mutual Friend</string>
+    <string name="mutual_friends">Mutual Friends</string>
+    <string name="list_tab">Notifications</string>
+    <string name="coupons_tab">Coupons</string>
+    <string name="requests_tab">Requests</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="incorrect_password">Incorrect Password</string>
+    <string name="no_coupon">No coupons available</string>
+    <string name="loading_video">Loading Video...</string>
+    <string name="error_connecting">Error connecting</string>
+    <string name="choose_event">Choose Event</string>
+    <string name="one_event_tag">You can only tag one event in a post. Untag the other event to proceed</string>
+    <string name="no_tagged_items">No Tagged Items</string>
+    <string name="sharing_event_tip">Notice how you see the event name listed above? this is to signify that you are sharing</string>
+    <string name="sharing_event_tip1">only</string>
+    <string name="sharing_event_tip2">with that community</string>
+    <string name="posting">Posting...</string>
+    <string name="votes">votes</string>
+    <string name="comments">comments</string>
+    <string name="vote">vote</string>
+    <string name="comment">comment</string>
+    <string name="please_enter_comment">Please Enter a Comment</string>
+    <string name="schedule_tip">Want to be</string>
+    <string name="schedule_tip1">notified</string>
+    <string name="schedule_tip2">before this is about to start? Tap on the bell icon above to set a custom reminder</string>
+    <string name="no_end_time">No End Time</string>
+    <string name="no_date">No Date</string>
+    <string name="no_location">No location</string>
+    <string name="no_description">No Description</string>
+    <string name="set_reminder_event">Set a reminder for this event?</string>
+    <string name="select_time">Select a time:</string>
+    <string name="schedule_1hr">Your schedule item</string>
+    <string name="schedule_1hr1">is starting in 1 hour</string>
+    <string name="schedule_time">Your schedule item</string>
+    <string name="schedule_time1">is starting in</string>
+    <string name="schedule_time2">minutes</string>
+    <string name="mutual_feeds">Mutual Feeds</string>
+    <string name="add_friend">Add Friend?</string>
+    <string name="add_friend_details">Are you sure you want to add Friend?</string>
+    <string name="unfriend_details">Are you sure you want to unfriend this user?</string>
+    <string name="unfriend">Unfriend user?</string>
+    <string name="unfollow_event_details">Are you sure you want to unfollow this event?</string>
+    <string name="unfollow_event">Unfollow Event?</string>
+    <string name="attend_event_details">Are you sure you want to attend this event?</string>
+    <string name="attend_event">Attend Event?</string>
+    <string name="unfollow_your_group">Can\'t unfollow a group that you own</string>
+    <string name="you_are_owner">You are the owner</string>
+    <string name="leave_group">Are you sure you want to leave</string>
+    <string name="leave_group1">\? You will have to be re-invited to visit this group.</string>
+    <string name="join_group_details">Are you sure you want to join this group?</string>
+    <string name="join_group">Join Group?</string>
+    <string name="mutual_feeds_pre">Mutual Feeds:</string>
+    <string name="an_event">An Event</string>
+    <string name="search_tip">Search</string>
+    <string name="search_tip1">helps you find friends and events around you</string>
+    <string name="gps_settings">GPS is settings</string>
+    <string name="enable_gps">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_account_details">Are you sure you want to delete your account?</string>
+    <string name="error_getting_age">Error getting age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="change_first_name">Change First Name</string>
+    <string name="change_last_name">Change Last Name</string>
+    <string name="choose_your_age">Choose Your Age</string>
+    <string name="other">Other</string>
+    <string name="change_sex">Change Sex</string>
+    <string name="add_profile_picture">Please add a profile picture</string>
+    <string name="account_created">Account Created</string>
+    <string name="no_photo_chosen">No Profile Photo Chosen</string>
+    <string name="find_event_friend">Find an event or friend</string>
+    <string name="first">First</string>
+    <string name="last">Last</string>
+    <string name="birthday">Birthday</string>
+    <string name="public_profile">Public</string>
+    <string name="_220">220</string>
+    <string name="what_s_going_on">What\'s going on?</string>
+    <string name="save_tags">Save Tags</string>
+    <string name="date">Date</string>
+    <string name="i_m_going">I\'m Going!</string>
+    <string name="valid_n_thru">Valid   Thru</string>
+    <string name="details">DETAILS</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="next">Next</string>
+    <string name="gender">Gender</string>
+    <string name="you_haven_t_made_any_posts">You haven\'t made any posts.</string>
+    <string name="welcome">Welcome</string>
+    <string name="event_has_no_schedules_posted">The event organizer hasn\'t added a schedule yet. Check back later!</string>
+    <string name="no_new_friend_requests">No New Friend Requests</string>
+    <string name="turn_off">Turn off</string>
+    <string name="got_it">Got it</string>
+    <string name="edit_profile_info">Edit Profile Info</string>
+    <string name="to_get_to_know_you_better_we_ask_what_gender_you_are">To get to know you better, we ask what gender you are.</string>
+    <string name="friends_tips">Did you know if you</string>
+    <string name="friends_tips2">hold down</string>
+    <string name="friends_tips3">on toolbox you will be taken back to your profile</string>
+    <string name="accept_friend">Are you sure you want to accept the friend request?</string>
+    <string name="add_friend_title">Add Friend?</string>
+    <string name="unfriend_title">Unfriend user?</string>
+    <string name="unfriend_user">Are you sure you want to unfriend this user?</string>
+    <string name="title_activity_friend_list">FriendListActivity</string>
+    <string name="wallet">Wallet</string>
+    <string name="attending_caps">ATTENDING</string>
+    <string name="unfollow_event_text">Are you sure you want to unfollow the event?</string>
+    <string name="not_going">Not Going?</string>
+    <string name="cant_unfollow">You can\'t unfollow an event you own</string>
+    <string name="error_unfollowing">Error unfollowing the event</string>
+    <string name="invite">INVITE</string>
+    <string name="share_event">SHARE EVENT</string>
+    <string name="send_an_invite">Send an Invite</string>
+    <string name="i_m_going_adds_you_to_the_attendees_list_puts_updates_from_the_event_in_your_feed_and_allows_you_to_be_sent_rewards_and_messages_from_hosts">I\'m Going adds you to the attendees list, puts updates from the event in your feed, and allows you to be sent rewards and messages from hosts</string>
+    <string name="posting_to">Posting to</string>
+    <string name="map">Map</string>
+    <string name="tickets">Tickets</string>
+    <string name="ticketing_not_setup">Ticketing has not been setup for this event</string>
+    <string name="mixpanel_token">810100f7d2b7b9323b9161e74aa8d6dc</string>
+    <string name="sure_add_friend">Are you sure you want to add Friend?</string>
+    <string name="user_no_friends">User hasn\'t added any friends yet. Send them a friend request above to connect!</string>
+    <string name="event_empty_feed">Nobody has posted in this event\'s Feed. Try making a post by tapping the ^ arrow below and selecting \'Post\'!</string>
+    <string name="empty_event_posts">The event organizer hasn\'t made any posts yet! We\'ll notify you when they do.</string>
+    <string name="no_web_browser">No application can handle this request. Please install a web browser</string>
+    <string name="start_time">START</string>
+    <string name="end_time">END</string>
+
+    <string name="view_maps">View Maps</string>
+    <string name="ticket_detail">Welcome to the Enchant app! If you have already purchased your ticket tap on import ticket below to store it in the app wallet.</string>
+    <string name="ticket_detail_edit">Enter your ticket ID found in your confirmation email, to import your ticket into the in app wallet. See example here.</string>
+    <string name="ticket_detail_success">Your Ticket has now been added to your in-app wallet. Tap done on the top right to proceed with using the app.</string>
+    <string name="ticket_detail_success_alert">Copy the code underneath the QR code (case-sensitive) found in your ticket confirmation email.</string>
+    <string name="tips1">Welcome! Let\'s get you using the app like a pro. Tap the toolbox button below to view the app navigation.</string>
+    <string name="tips2">Try exploring some of the options underneath!</string>
+    <string name="tips3">To return home hold down on the Toolbox button below</string>
+    <string name="tips4">When posting you can tag, friends and add photos.</string>
+    <string name="tips5">Change your account settings, see what your connections are up to, or review past posts here</string>
+    <string name="tips6">You can see what your friends are posting, their friends, or events they\'re attending here.</string>
+    <string name="tips7">Want to be reminded about this item? Tap on the bell to set a custom reminder.</string>
+    <string name="stop_tips">Stop tips</string>
+    <string name="close">Close</string>
+    <string name="find_me">Find Me</string>
+    <string name="attendees_event">Attendees</string>
+    <string name="event_date">1</string>
+    <string name="event_day">FRI</string>
+    <string name="event_dateMonth">July,2017</string>
+    <string name="private_location_sharing">Private location sharing</string>
+    <string name="tap_to_private_location_sharing">Tap START above to privately share with your friends.</string>
+    <string name="start_sharing">START</string>
+    <string name="stop_sharing">STOP</string>
+    <string name="set_location">Set</string>
+    <string name="share_location_for">Share location for</string>
+    <string name="share_location_time">Sharing for %1$s</string>
+    <string name="friends_status">Friends</string>
+    <string name="friends_status_add">Add Friends</string>
+    <string name="no_instagram_acc">There is no Instagram account.</string>
+    <string name="no_LinkedIn_acc">There is no LinkedIn account.</string>
+    <string name="friends_request">Request Sent</string>
+    <string name="empty_feed_view">Keep checking back here for updates \n \t\t\t\t\t\t\t about the event.</string>
+    <string name="empty_schedule_view">Once the schedule has been added,it \n \t\t\t\t will appear in here.</string>
+    <string name="back">Back</string>
+</resources>

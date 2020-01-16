@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themecolor"
+    tools:context=".activities.SelectCityActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/themecolor"
+        tools:context=".activities.SelectCityActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/status_bar_margin"
+            android:padding="10dp"
+            android:tint="@color/darkSkyBlue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_btn" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/backBtn"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="@id/backBtn"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                fontPath="fonts/AvenirNextBold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthname"
+                android:layout_marginStart="12dp"
+                android:text="Schedule"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                fontPath="fonts/AvenirNextBold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="See what's happening"
+                android:visibility="visible"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sortBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/backBtn"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:tint="@color/darkSkyBlue"
+            app:layout_constraintTop_toTopOf="@id/backBtn"
+            app:srcCompat="@drawable/sort_icon" />
+
+
+<!--        <View-->
+<!--            android:id="@+id/headerLine"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.5dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@android:color/darker_gray"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/backBtn" />-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dateRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/dateRecyclerView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/sortingSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_top"
+        android:backgroundTint="@android:color/white"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            fontPath="fonts/AvenirNextBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sort_schedule_by"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <NumberPicker
+                android:id="@+id/sortPicker"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:theme="@style/NumberPickerText" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doneBtn"
+            fontPath="fonts/AvenirNextBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/editext_round_white"
+            android:backgroundTint="@color/darkSkyBlue"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/eventDetailSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_top"
+        android:backgroundTint="@android:color/white"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:alpha="0.5"
+                    android:background="@android:color/darker_gray" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/headingText"
+                        fontPath="fonts/AvenirNextBold.ttf"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_toStartOf="@+id/favIcon_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:text="@string/gates_open"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/favIcon_main"
+
+                        android:layout_width="70dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/love_unselect"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/startDateText"
+                    fontPath="fonts/AvenirNextBold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:text="Oct 25, 2019"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/eventImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/christmas_back_splash" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/time"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4:00 PM to 5:30 PM"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/location"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/locationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main Stage"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="19sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/description"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/descText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    tools:text="Welcome to another spectacular year! we are so excited to get everyone back into an amazing time with friends, family and more! Keep checking back."
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient"
+    tools:context=".activities.SelectCityActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/status_bar_margin"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gameInitTextTitle"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/santa_s_lost_presents"
+        android:textColor="@android:color/white"
+        android:textSize="1sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/gameInitDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/santa_s_presents_have_gone_missing"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gameInitTextTitle" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/beginQuestBtn"
+        fontPath="fonts/AvenirNextBold.ttf"
+        android:layout_width="0dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/skyBlue"
+        android:background="@drawable/editext_round_white"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_height="56dp"
+        android:text="@string/begin_quest"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="25dp"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

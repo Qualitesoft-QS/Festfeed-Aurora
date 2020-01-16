@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themecolor"
+    tools:context=".activities.MapsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/themecolor"
+        tools:context=".activities.MapsActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/status_bar_margin"
+            android:padding="10dp"
+            android:tint="@color/darkSkyBlue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_btn" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            fontPath="fonts/AvenirNextBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Maps"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="@id/backBtn"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="@id/backBtn" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mapMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/backBtn"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:tint="@color/darkSkyBlue"
+            app:layout_constraintTop_toTopOf="@id/backBtn"
+            app:srcCompat="@drawable/map_menu" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backBtn">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activities.MapsActivity" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:elevation="15dp"
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_top"
+        android:backgroundTint="@android:color/white"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="@android:color/darker_gray" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mapItemRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

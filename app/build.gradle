@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.glow.canada"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "version"
+
+    productFlavors {
+        Glow {
+            //select the dimension of flavor
+            dimension "version"
+
+            //configure applicationId for app published to Play store
+            applicationId "com.glow.canada"
+
+            //Configure this flavor specific app name published in Play Store
+            resValue "string", "app_name", "Glow"
+
+
+//            buildConfigField("String", "BASE_URL", "\"https://api-awf.festfeed.com/\"")
+            //buildConfigField("String", "BASE_URL", "\"https://api-dev.festfeed.com/\"")
+            buildConfigField("String", "BASE_URL", "\"https://api-glow.festfeed.com/\"")
+
+
+        }
+
+//        FestFeed_dev_mc {
+//            dimension "version"
+//
+//            applicationId "com.festfeed.festfeeddevmc"
+//            resValue "string", "app_name", "FestFeed_dev_mc"
+//        }
+//
+//        FestFeed_dev_sc {
+//            //select the dimension of flavor
+//            dimension "version"
+//
+//            //configure applicationId for app published to Play store
+//            applicationId "com.festfeed.awf.FestFeeddevsc"
+//
+//            //Configure this flavor specific app name published in Play Store
+//            resValue "string", "app_name", "FestFeed_dev_sc"
+//
+//        }
+//
+////        FestFeed_dev_c {
+////            dimension "version"
+////
+////            applicationId "com.festfeed.festfeeddevc"
+////            resValue "string", "app_name", "FestFeed_dev_c"
+////        }
+//        Glow_debug {
+//            dimension "version"
+//
+//            applicationId "com.festfeed.awf.glow"
+//            resValue "string", "app_name", "Glow"
+//        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.github.Binary-Finery:Bungee:2.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'com.github.quickpermissions:quickpermissions-kotlin:0.4.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation "com.squareup.okhttp3:okhttp:4.1.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.1.0"
+
+    implementation "com.squareup.retrofit2:retrofit:2.6.1"
+    implementation "com.squareup.retrofit2:converter-gson:2.6.1"
+    implementation'com.squareup.retrofit2:converter-scalars:2.5.0'
+
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-iid:20.0.0'
+    implementation 'android.arch.work:work-runtime:1.0.1'
+    implementation 'io.paperdb:paperdb:2.6'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    // (Recommended) Add Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+
+    // Add dependency
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

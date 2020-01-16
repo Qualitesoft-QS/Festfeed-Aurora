@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "87580056018",
+    "firebase_url": "https://glowcanada-80e2e.firebaseio.com",
+    "project_id": "glowcanada-80e2e",
+    "storage_bucket": "glowcanada-80e2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87580056018:android:897ef4d8737d7e4142900b",
+        "android_client_info": {
+          "package_name": "com.glow.canada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87580056018-7e2uo8hcd93s7u2fc8ej4h4cbukanorg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp6Ox4KQopPqJx6DIvTmSYncNGnI7qInU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87580056018-7e2uo8hcd93s7u2fc8ej4h4cbukanorg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

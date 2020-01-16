@@ -1,0 +1,68 @@
+{
+    "overlays":[
+        {
+            "eventid": "d3aa1255-0261-48d7-88fb-582ce42e9f22",
+            "SWLong": -122.38250435,
+            "SWLat": 49.02316644,
+            "NELong":  -122.38018173,
+            "NELat": 49.02500668,
+            "ImageName": "glowabbotsford"
+        },
+        {
+            "eventid": "9bb70c83-0196-4e3a-8954-db63c6dacd2e",
+            "SWLong": -113.4598306,
+            "SWLat": 53.56758398,
+            "NELong":  -113.45797937,
+            "NELat": 53.56865128,
+            "ImageName": "glowedmonton"
+        },
+        {
+            "eventid": "d0b542d9-008c-4138-972b-fdb423dcf029",
+            "SWLong": -63.66561379,
+            "SWLat": 44.61633885,
+            "NELong":  -63.66381465,
+            "NELat": 44.61775565,
+            "ImageName": "glowhalifax"
+        },
+        {
+            "eventid": "0e0e2b7d-76a0-465d-8876-a015f28e71e2",
+            "SWLong": 10.35475611,
+            "SWLat": 55.35643621,
+            "NELong":  10.35669748,
+            "NELat": 55.35741938,
+            "ImageName": "glowodense"
+        },
+        {
+            "eventid": "e4148085-5496-41a9-94db-b6885f440938",
+            "SWLong": -75.654331,
+            "SWLat": 45.33122995,
+            "NELong":  -75.6526815,
+            "NELat": 45.33240637,
+            "ImageName": "glowottawa"
+        },
+        {
+            "eventid": "cb99cb83-7b9e-4631-859f-995189edbc42",
+            "SWLong": -106.67795297,
+            "SWLat": 52.09837208,
+            "NELong":  -106.67642403,
+            "NELat": 52.09925763,
+            "ImageName": "glowsask"
+        },
+        {
+            "eventid": "8a55aafe-6bac-4941-a7b9-5ef8fdd96eb2",
+            "SWLong": -79.57801688,
+            "SWLat": 43.69443515,
+            "NELong":  -79.57621848,
+            "NELat": 43.69568981,
+            "ImageName": "glowtoronto"
+        },
+        {
+            "eventid": "9bfbc013-46c9-42a0-8e7d-5b9168f450cb",
+            "SWLong": -123.10957464,
+            "SWLat": 49.27415919,
+            "NELong":  -123.10870022,
+            "NELat": 49.27505998,
+            "ImageName": "glowvan"
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient"
+    tools:context=".activities.SelectCityActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_gradient">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/splashLogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22"
+            app:srcCompat="@drawable/glow_christmas_logo_splash" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectCityTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_city"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedCity"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@drawable/editext_round_white"
+            android:gravity="center"
+            android:text="@string/blank_hyphens"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectCityTextTitle"
+            app:layout_constraintVertical_bias="0.12"
+            app:layout_constraintWidth_percent="0.82" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/view_the_terms_of_service_"
+            android:text="@string/view_the_terms_of_service_"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedCity"
+            app:layout_constraintVertical_bias="0.12" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             android:id="@+id/view_privacy_policy"
+            android:text="@string/view_privacy_policy"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_the_terms_of_service_"
+            app:layout_constraintVertical_bias="0.03" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="1"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminateDrawable="@drawable/progress_indeterminate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.18" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:elevation="15dp"
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_top"
+        android:backgroundTint="@android:color/white"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            fontPath="fonts/AvenirNextBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/select_your_city"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <NumberPicker
+                android:theme="@style/NumberPickerText"
+                android:id="@+id/cityPicker"
+                android:visibility="invisible"
+                android:layout_width="250dp"
+                android:layout_height="180dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doneBtn"
+            fontPath="fonts/AvenirNextBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/editext_round_white"
+            android:backgroundTint="@color/colorDarkBlue"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
